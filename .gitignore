@@ -1,3 +1,8 @@
+# Projeto atual
+geckodriver.log
+virtualenv/
+*.pyc
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -105,7 +110,6 @@ celerybeat.pid
 *.sage.py
 
 # Environments
-virtualenv/
 .env
 .venv
 env/
