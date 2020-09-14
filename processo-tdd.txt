@@ -1,0 +1,3 @@
+De forma geral, o processo TDD pode ser visto na figura abaixo: escrever o teste, rodar o teste e verificar se falha, escrever algum código mínimo(1) da aplicação, rodar o teste novamente e repetir até passar. Adicionalmente, podemos refatorar nosso código, utilizando sempre o teste para garantir que não quebramos nada. Caso precise de refatoração, vá para (1).
+(1) O que se entende por código mínimo:
+Escrever um teste de unidade, rodar o TU, caso passe, verificar se precisa de refatoração, se sim, escrever o código mínimo e voltar a rodar o teste de unidade, até passar. Enquanto não passar no TU, escrever código mínimo. Quando não precisar mais de refatoração, termina esse bloco.
