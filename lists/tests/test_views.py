@@ -95,4 +95,11 @@ class NewListTest(TestCase):
         self.client.post('/lists/new', data={'item_text': ''})
         self.assertEqual(List.objects.count(), 0)
         self.assertEqual(Item.objects.count(), 0)
-        
+
+class SendLoginEmailViewTest(TestCase):
+
+    def test_redirects_to_home_page(self):
+        response = self.client.post('/accounts/send_login_email', data={
+            'email': 'edith@example.com'
+        })
+        self.assertRedirects(response, '/')
